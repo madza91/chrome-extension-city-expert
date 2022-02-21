@@ -1,0 +1,32 @@
+{
+  "name": "CityExpert",
+  "short_name": "CityExpert",
+  "version": "1.0",
+  "description": "This extension gives you additional info on CityExpert website",
+  "manifest_version": 2,
+  "author": "Nemanja Madžovski (madzaWeb)",
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/ce-16.png",
+      "32": "images/ce-32.png",
+      "48": "images/ce-48.png",
+      "128": "images/ce-128.png"
+    },
+    "default_title": "CityExpert"
+  },
+  "icons": {
+    "16": "images/ce-16.png",
+    "32": "images/ce-32.png",
+    "48": "images/ce-48.png",
+    "128": "images/ce-128.png"
+  },
+  "content_scripts": [
+  {
+    "matches": [
+      "https://cityexpert.rs/*"
+    ],
+    "js": ["content.js"]
+  }
+]
+}
